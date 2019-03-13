@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.thedataincubator.com/challenge.html -->
+<html lang="en" itemscope="" itemtype="http://schema.org/WebPage" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+      <script async="" src="./Challenge _ The Data Incubator_files/analytics.js"></script><script type="text/javascript" src="./Challenge _ The Data Incubator_files/8f1ea5ed20cb2ddf17bf38dcf7b49b7f.scripts.min.js" defer=""></script>
+    
+
+    
+    
+    <!-- Basic Page Needs
+    ================================================== -->
+    
+    <title> Challenge | The Data Incubator</title>
+    <meta name="description" content="Applied Data Science Education">
+    <meta name="author" content="The Data Incubator">
+    <!-- For Google Plus sharing -->
+    <meta itemprop="name" content=" Challenge |  The Data Incubator">
+    <meta itemprop="description" content="Applied Data Science Education">
+    <meta name="keywords" content="r class,r course,data science,spark training,hadoop training,hadoop class,r online course,data science courses,data science programs,data science degrees,data science program,data science course,data science degree,data science training,intro to data science,data science jobs,hadoop online course,data science certification,python data science,spark class,data science boot camp,data science certificate,data science online courses,data science certificate program,data science online course,learn data science,data science training program,data science online,data science certificate online,data science course online,python for data science for dummies,data science bootcamp,harvard data science,data science training courses,python for data science,spark vs hadoop,data science academy,data science certifications,harvard data science certificate,data science training online,harvard data science course,the data incubator,data science nyc,data science dc,data science bay area,data science sf,spark course,pandas course,data science training and placement">
+    <meta itemprop="image" content="https://www.thedataincubator.com/static/dist/images/logo.jpg">
+
+    <!-- For FB? -->
+    <meta property="og:title" content=" Challenge |  The Data Incubator">
+    <meta property="og:image" content="https://www.thedataincubator.com/static/dist/images/logo.jpg">
+    <meta property="og:description" content="Applied Data Science Education">
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@thedatainc">
+    <meta name="twitter:title" content=" Challenge |  The Data Incubator">
+    <meta name="twitter:description" content="Applied Data Science Education">
+    <meta name="twitter:image" content="https://www.thedataincubator.com/static/dist/images/logo.jpg">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+<link rel="stylesheet" type="text/css" href="./Challenge _ The Data Incubator_files/application.css">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="https://www.thedataincubator.com/static/dist/images/chart-outline.ico">
+    <link rel="canonical" href="https://www.thedataincubator.com/challenge.html">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+  <body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+    <!-- Preloader -->
+    <style type="text/css">
+    h1.noSubtitle:after{
+      background-color:#3E6D92;
+      display:block;
+      height:1px;
+      width:100px;
+      content:'';
+      position:absolute;
+      margin-left:-50px;
+      margin-top: 20px;
+      left:50%;
+    }
+    h1 {
+      color:#222;
+      font-size: 44px;
+      line-height: 44px;
+      font-weight: 100;
+      font-style: normal;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    body {
+      color:#777;
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    body.modal-open {
+      overflow-y: auto;  /* Disable bootstrap change that causes jump on modal open */
+    }                    /* See https://github.com/twbs/bootstrap/issues/9855 */
+    #preloader {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: 100000;
+      background: white;
+      opacity: 1;
+    }
+    #status {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -100px;
+      padding-top: 15px;
+    }
+    </style>
+    <div id="container">
+      <div id="preloader" style="display: none;">
+        <div id="status" style="display: none;">
+          <h1 class="noSubtitle"><i class="icon-chart-outline"></i>The Data Incubator</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader -->
+    <!-- Primary Page Layout
+    ================================================== -->
+    <!-- globalWrapper -->
+    <div class="overflow-hidden">
+    
+<div id="paralaxSlice5" data-stellar-background-ratio="0.5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(&quot;/static/dist/images/theme-pics/capitol-building-2.jpg&quot;);">
+  <div class="maskParent">
+    <div class="paralaxMask"></div>
+    <div class="paralaxText container">
+      <blockquote class="bigTitle">Data Scientist: The Sexiest Job<br>of the 21st Century</blockquote>
+      <small>Harvard Business Review</small>
+    </div>
+  </div>
+</div>
+<section class="slice" id="apply">
+  <div class="hi">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="noSubtitle">Challenge</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+	  <div class="alert alert-warning" role="alert">
+  <p><b>Warning:</b> We suggest you use <a href="https://www.google.com/chrome/">Chrome</a> as your browser (possibly using Incognito Mode) if you experience any errors.</p>
+</div>
+	  <p>Please answer as many questions as you can. We do not expect you to answer them all, but <b>you <i>must</i> answer at least one for each section.</b>  Answering more questions correctly will help you and answering them incorrectly will not hurt you.  <b>Please give all numerical answers to 10 digits of precision.  Partial credit will be given to answers that agree to less than 10 digits.</b>  (<sup>*</sup>) denotes a required field.  Due to the volume of requests, we will only accept submissions via this form.  The basic ground rules are:</p>
+          <ul>
+            <li><strong>Answer the questions yourself without asking others for assistance</strong>.  This is a test of your ability to answer realistic questions.  You will be asked questions of similar difficulty during the phone interview so cheating will not help.</li>
+            <li><strong>Do not share the questions or your answers with anyone.</strong>  This includes posting the questions or your solutions publicly on services like quora, stackoverflow, or github.  Doing so gives others an unfair advantage and may also disqualify you from this or future fellowships.</li>
+            <li><strong>Submit early.</strong> We highly recommend aiming to submit the answers well ahead of the deadline.  Every quarter, a number of "unforeseeable" technical difficulties have prohibited otherwise highly-qualified last-minute applicants from submitting. Don't be a statistic.</li>
+            <li><strong>Submit often.</strong> You can submit your challenge solutions as often as you would like. Only the last submitted challenge is kept so we recommend you submit your answers as you complete them.</li>
+          </ul>
+          <p>A few helpful hints:
+          </p>
+          <ol>
+            <li><strong>Want to get a head start on being a data scientist?</strong> We want all semifinalists to get as much out of the challenge questions as possible.  So we've written <a href="http://blog.thedataincubator.com/2015/09/painlessly-deploying-data-apps-with-bokeh-flask-and-heroku/">three</a> <a href="http://blog.thedataincubator.com/2015/01/processing-data-like-a-professional-data-scientist/">blog</a> <a href="http://blog.thedataincubator.com/2015/01/a-cs-degree-for-data-science-part-i-efficient-numerical-computation/">posts</a> that might get you thinking about mathematics and computation differently.  They will also give you a head start on solving the challenge questions.  For additional hints on the challenge, follow us on <a href="http://twitter.com/intent/user?screen_name=thedatainc">Twitter</a>, <a href="https://www.linkedin.com/company/the-data-incubator">LinkedIn</a>, and <a href="https://www.facebook.com/dataincubator/">Facebook</a>.</li>
+            <li><strong>Having browser troubles?</strong> We recommend using <a href="https://www.google.com/chrome/">Chrome</a> (possibly using Incognito Mode).</li>
+            <li><strong>Having trouble downloading any files?</strong> We suggest using command-line tools, rather than relying on a browser.</li>
+            <li><strong>Found something ambiguous?</strong> We realize some questions are ambiguous.  Most real-world questions are.  This is a test of whether you can prioritize important effects and combine real-world knowledge with theory.</li>
+            <li><strong>Questions a little too difficult?</strong> You might want to consider signing up for our online <a href="https://www.thedataincubator.com/foundations.html">data science foundations class</a>, which teaches the pre-requisite material needed for the fellowship.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <form class="form-horizontal" role="form" id="challengeForm" method="POST" action="https://www.thedataincubator.com/challengeSubmit">
+            <div class="row">
+              <div class="col-xs-12 mt30">
+                 <strong>Section 1:</strong> 
+    The New York City Fire Department keeps a log of detailed information on incidents handled by FDNY units. In this challenge we will work with a dataset that contains a record of incidents handled by FDNY units from 2013-2017. <a href="https://data.cityofnewyork.us/api/views/tm6d-hbzd/rows.csv?accessType=DOWNLOAD">Download the FDNY data set.</a> Also take a look at the <a href="https://data.cityofnewyork.us/Public-Safety/Incidents-Responded-to-by-Fire-Companies/tm6d-hbzd">dataset landing page</a> and find descriptions of column names <a href="https://data.cityofnewyork.us/api/views/tm6d-hbzd/files/1434d09c-fbf8-4450-8b42-9fe0c3b85fb3?download=true&amp;filename=OPEN_DATA_FIRE_INCIDENTS_FILE_DESCRIPTION.xls">here.</a>
+    
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyMostCommon" class="control-label left-align">
+      What proportion of FDNY responses in this dataset correspond to the most common type of incident?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyMostCommon" name="fdnyMostCommon" maxlength="200">
+    <div class="error-text" id="fdnyMostCommon-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyNumUnits" class="control-label left-align">
+       What is the ratio of the average number of units that arrive to a scene of an incident classified as '111 - Building fire' to the number that arrive for '651 - Smoke scare, odor of smoke'?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyNumUnits" name="fdnyNumUnits" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyNumUnits-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyFalseCalls" class="control-label left-align">
+      How many times more likely is an incident in Staten Island a false call compared to in Manhattan? The answer should be the ratio of Staten Island false call rate to Manhattan false call rate. A false call is an incident for which 'INCIDENT_TYPE_DESC' is '710 - Malicious, mischievous false call, other'.
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyFalseCalls" name="fdnyFalseCalls" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyFalseCalls-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyResponseTime" class="control-label left-align">
+      Check the distribution of the number of minutes it takes between the time a '111 - Building fire' incident has been logged into the Computer Aided Dispatch system and the time at which the first unit arrives on scene. What is the third quartile of that distribution. Note: the number of minutes can be fractional (ie, do not round).
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyResponseTime" name="fdnyResponseTime" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyResponseTime-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyCookingFires" class="control-label left-align">
+      We can use the FDNY dataset to investigate at what time of the day people cook most. Compute what proportion of all incidents are cooking fires for every hour of the day by normalizing the number of cooking fires in a given hour by the total number of incidents that occured in that hour. Find the hour of the day that has the highest proportion of cooking fires and submit that proportion of cooking fires. A cooking fire is an incident for which 'INCIDENT_TYPE_DESC' is '113 - Cooking fire, confined to container'. Note: round incident times down. For example, if an incident occured at 22:55 it occured in hour 22.
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyCookingFires" name="fdnyCookingFires" maxlength="200" placeholder="0.9876543210">
+    <div class="error-text" id="fdnyCookingFires-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyByZipcode" class="control-label left-align">
+      What is the coefficient of determination (R squared) between the number of residents at each zip code and the number of inicidents whose type is classified as '111 - Building fire' at each of those zip codes. Note: The 2010 US Census population by zip code dataset should be <a href="https://s3.amazonaws.com/SplitwiseBlogJB/2010+Census+Population+By+Zipcode+(ZCTA).csv">downloaded from here.</a> You will need to use both the FDNY responses and the US Census dataset. Ignore zip codes that do not appear in the census table.
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyByZipcode" name="fdnyByZipcode" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyByZipcode-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyCoDetector" class="control-label left-align">
+      For this question, only consider incidents that have information about whether a CO detector was present or not. We are interested in how many times more likely it is that an incident is long when no CO detector is present compared to when a CO detector is present. For events with CO detector and for those without one, compute the proportion of incidents that lasted 20-30, 30-40, 40-50, 50-60, and 60-70 minutes (both interval boundary values included) by dividing the number of incidents in each time interval with the total number of incidents. For each bin, compute the ratio of the 'CO detector absent' frequency to the 'CO detector present' frequency. Perform a linear regression of this ratio to the mid-point of the bins. From this, what is the predicted ratio for events lasting 39 minutes?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyCoDetector" name="fdnyCoDetector" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyCoDetector-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="fdnyDurationRegression" class="control-label left-align">
+      Calculate the chi-square test statistic for testing whether an incident is more likely to last longer than 60 minutes when CO detector is not present. Again only consider incidents that have information about whether a CO detector was present or not. 
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="fdnyDurationRegression" name="fdnyDurationRegression" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="fdnyDurationRegression-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 mt5">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="fdnyCode">Please provide the script used to generate this result (max 10000 characters).</label>
+    <textarea id="fdnyCode" name="fdnyCode" class="form-control allowtab" rows="6" maxlength="10000"></textarea>
+  </div>
+</div>
+                <label>In what language is the script written?</label>
+<div class="row">
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_c" name="fdnyLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_fortran" name="fdnyLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_idl" name="fdnyLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_java" name="fdnyLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_matlab" name="fdnyLanguage" value="matlab">
+          MATLAB
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_perl" name="fdnyLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_python" name="fdnyLanguage" value="python" placeholder="">
+          Python
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_r" name="fdnyLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_stata" name="fdnyLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_sql" name="fdnyLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_vba" name="fdnyLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="fdnyLanguage_other" name="fdnyLanguage" value="other" placeholder="">
+          Other
+      </label>
+    </div>
+  </div>
+  </div>
+  
+</div>
+              </div>
+            </div>
+
+	    <div class="row mt15">
+              <div class="col-xs-12">
+                <strong>Section 2:</strong>  
+    A circular road has <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 0.888em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.732em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.73em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">N</script> positions labeled <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-4" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-5"><span class="mn" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-2">0</script> through <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" style="width: 2.971em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.451em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.35em, 2.815em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-8"><span class="mi" id="MathJax-Span-9" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-10" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">−</span><span class="mn" id="MathJax-Span-11" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.247em; border-left: 0px solid; width: 0px; height: 1.128em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>−</mo><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-3">N-1</script> where adjacent positions are connected to each other and position <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-12" style="width: 2.971em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.451em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.35em, 2.815em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-13"><span class="mi" id="MathJax-Span-14" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-15" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">−</span><span class="mn" id="MathJax-Span-16" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.247em; border-left: 0px solid; width: 0px; height: 1.128em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>−</mo><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">N-1</script> is connected to <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-17" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-18"><span class="mn" id="MathJax-Span-19" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">0</script>. <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-20" style="width: 1.096em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.888em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.89em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-21"><span class="mi" id="MathJax-Span-22" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi></math></span></span><script type="math/tex" id="MathJax-Element-6">M</script> cars start at position <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-23" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-24"><span class="mn" id="MathJax-Span-25" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-7">0</script> through <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-26" style="width: 3.128em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.607em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.5em, 2.815em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-27"><span class="mi" id="MathJax-Span-28" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-29" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">−</span><span class="mn" id="MathJax-Span-30" style="font-family: STIXGeneral-Regular; padding-left: 0.263em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.247em; border-left: 0px solid; width: 0px; height: 1.128em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>−</mo><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-8">M-1</script> (inclusive). A car can make a valid move by moving forward one position (or goes from N-1 to 0) if the position it is moving into is empty.  At each turn, only consider cars that have a valid move available and make one of the valid moves that you choose randomly with equal probability. After <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-31" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.63em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-32"><span class="mi" id="MathJax-Span-33" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">T</script> rounds, we compute the average (<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-34" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.58em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-35"><span class="mi" id="MathJax-Span-36" style="font-family: STIXGeneral-Italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-10">A</script>) and standard deviation (<span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-11-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-37" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-38"><span class="mi" id="MathJax-Span-39" style="font-family: STIXGeneral-Italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></span></span><script type="math/tex" id="MathJax-Element-11">S</script>) of the position of the cars.
+    
+              </div>
+            </div>
+            <div class="mt15 row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringSmallMeanAvg" class="control-label left-align">
+      What is the expected value of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-12-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-40" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.58em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-41"><span class="mi" id="MathJax-Span-42" style="font-family: STIXGeneral-Italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-12">A</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-13-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-43" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.02em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-44"><span class="mi" id="MathJax-Span-45" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-46" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-47" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-13">N = 10</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-14-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-48" style="width: 3.284em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.711em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.66em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-49"><span class="mi" id="MathJax-Span-50" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-51" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-52" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">5</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-14">M = 5</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-15-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-53" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-54"><span class="mi" id="MathJax-Span-55" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-56" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-57" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">20</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>20</mn></math></span></span><script type="math/tex" id="MathJax-Element-15">T = 20</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringSmallMeanAvg" name="ringSmallMeanAvg" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringSmallMeanAvg-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringSmallStdAvg" class="control-label left-align">
+      What is the standard deviation of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-16-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-58" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.58em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-59"><span class="mi" id="MathJax-Span-60" style="font-family: STIXGeneral-Italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-16">A</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-17-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-61" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.02em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-62"><span class="mi" id="MathJax-Span-63" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-64" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-65" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-17">N = 10</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-18-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-66" style="width: 3.284em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.711em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.66em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-67"><span class="mi" id="MathJax-Span-68" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-69" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-70" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">5</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-18">M = 5</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-19-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-71" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-72"><span class="mi" id="MathJax-Span-73" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-74" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-75" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">20</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>20</mn></math></span></span><script type="math/tex" id="MathJax-Element-19">T = 20</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringSmallStdAvg" name="ringSmallStdAvg" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringSmallStdAvg-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="mt15 row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringSmallMeanStd" class="control-label left-align">
+      What is the expected value of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-20-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-76" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-77"><span class="mi" id="MathJax-Span-78" style="font-family: STIXGeneral-Italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></span></span><script type="math/tex" id="MathJax-Element-20">S</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-21-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-79" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.02em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-80"><span class="mi" id="MathJax-Span-81" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-82" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-83" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-21">N = 10</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-22-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-84" style="width: 3.284em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.711em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.66em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-85"><span class="mi" id="MathJax-Span-86" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-87" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-88" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">5</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-22">M = 5</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-23-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-89" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-90"><span class="mi" id="MathJax-Span-91" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-92" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-93" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">20</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>20</mn></math></span></span><script type="math/tex" id="MathJax-Element-23">T = 20</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringSmallMeanStd" name="ringSmallMeanStd" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringSmallMeanStd-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringSmallStdStd" class="control-label left-align">
+      What is the standard deviation of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-24-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-94" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-95"><span class="mi" id="MathJax-Span-96" style="font-family: STIXGeneral-Italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></span></span><script type="math/tex" id="MathJax-Element-24">S</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-25-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-97" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.02em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-98"><span class="mi" id="MathJax-Span-99" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-100" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-101" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-25">N = 10</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-26-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-102" style="width: 3.284em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.711em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.66em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-103"><span class="mi" id="MathJax-Span-104" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-105" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-106" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">5</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>5</mn></math></span></span><script type="math/tex" id="MathJax-Element-26">M = 5</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-27-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-107" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-108"><span class="mi" id="MathJax-Span-109" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-110" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-111" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">20</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>20</mn></math></span></span><script type="math/tex" id="MathJax-Element-27">T = 20</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringSmallStdStd" name="ringSmallStdStd" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringSmallStdStd-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="mt15 row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringLargeMeanAvg" class="control-label left-align">
+      What is the expected value of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-28-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-112" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.58em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-113"><span class="mi" id="MathJax-Span-114" style="font-family: STIXGeneral-Italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-28">A</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-29-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;25&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-115" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.97em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-116"><span class="mi" id="MathJax-Span-117" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-118" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-119" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">25</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>25</mn></math></span></span><script type="math/tex" id="MathJax-Element-29">N = 25</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-30-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-120" style="width: 3.857em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.18em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.18em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-121"><span class="mi" id="MathJax-Span-122" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-123" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-124" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-30">M = 10</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-31-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-125" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-126"><span class="mi" id="MathJax-Span-127" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-128" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-129" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">50</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>50</mn></math></span></span><script type="math/tex" id="MathJax-Element-31">T = 50</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringLargeMeanAvg" name="ringLargeMeanAvg" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringLargeMeanAvg-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringLargeStdAvg" class="control-label left-align">
+      What is the standard deviation of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-32-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-130" style="width: 0.784em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.628em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.58em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-131"><span class="mi" id="MathJax-Span-132" style="font-family: STIXGeneral-Italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-32">A</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-33-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;25&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-133" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.97em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-134"><span class="mi" id="MathJax-Span-135" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-136" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-137" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">25</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>25</mn></math></span></span><script type="math/tex" id="MathJax-Element-33">N = 25</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-34-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-138" style="width: 3.857em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.18em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.18em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-139"><span class="mi" id="MathJax-Span-140" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-141" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-142" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-34">M = 10</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-35-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-143" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-144"><span class="mi" id="MathJax-Span-145" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-146" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-147" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">50</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>50</mn></math></span></span><script type="math/tex" id="MathJax-Element-35">T = 50</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringLargeStdAvg" name="ringLargeStdAvg" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringLargeStdAvg-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="mt15 row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringLargeMeanStd" class="control-label left-align">
+      What is the expected value of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-36-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-148" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-149"><span class="mi" id="MathJax-Span-150" style="font-family: STIXGeneral-Italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></span></span><script type="math/tex" id="MathJax-Element-36">S</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-37-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;25&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-151" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.97em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-152"><span class="mi" id="MathJax-Span-153" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-154" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-155" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">25</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>25</mn></math></span></span><script type="math/tex" id="MathJax-Element-37">N = 25</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-38-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-156" style="width: 3.857em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.18em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.18em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-157"><span class="mi" id="MathJax-Span-158" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-159" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-160" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-38">M = 10</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-39-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-161" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-162"><span class="mi" id="MathJax-Span-163" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-164" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-165" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">50</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>50</mn></math></span></span><script type="math/tex" id="MathJax-Element-39">T = 50</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringLargeMeanStd" name="ringLargeMeanStd" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringLargeMeanStd-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    
+    
+    <label for="ringLargeStdStd" class="control-label left-align">
+      What is the standard deviation of <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-40-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;S&lt;/mi&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-166" style="width: 0.628em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.523em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1000.52em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-167"><span class="mi" id="MathJax-Span-168" style="font-family: STIXGeneral-Italic;">S<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi></math></span></span><script type="math/tex" id="MathJax-Element-40">S</script> when <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-41-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;25&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-169" style="width: 3.648em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.023em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.97em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-170"><span class="mi" id="MathJax-Span-171" style="font-family: STIXGeneral-Italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-172" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-173" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">25</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>=</mo><mn>25</mn></math></span></span><script type="math/tex" id="MathJax-Element-41">N = 25</script>, <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-42-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-174" style="width: 3.857em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.18em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1003.18em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-175"><span class="mi" id="MathJax-Span-176" style="font-family: STIXGeneral-Italic;">M<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-177" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-178" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">10</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mn>10</mn></math></span></span><script type="math/tex" id="MathJax-Element-42">M = 10</script>, and <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-43-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;T&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-179" style="width: 3.544em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.919em; height: 0px; font-size: 120%;"><span style="position: absolute; clip: rect(1.669em, 1002.92em, 2.659em, -999.997em); top: -2.497em; left: 0em;"><span class="mrow" id="MathJax-Span-180"><span class="mi" id="MathJax-Span-181" style="font-family: STIXGeneral-Italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.055em;"></span></span><span class="mo" id="MathJax-Span-182" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">=</span><span class="mn" id="MathJax-Span-183" style="font-family: STIXGeneral-Regular; padding-left: 0.315em;">50</span></span><span style="display: inline-block; width: 0px; height: 2.503em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left: 0px solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi><mo>=</mo><mn>50</mn></math></span></span><script type="math/tex" id="MathJax-Element-43">T = 50</script>?
+      </label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="ringLargeStdStd" name="ringLargeStdStd" maxlength="200" placeholder="1.234567890">
+    <div class="error-text" id="ringLargeStdStd-error-text">
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 mt5">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="ringCode">Please provide the script used to generate this result (max 10000 characters).</label>
+    <textarea id="ringCode" name="ringCode" class="form-control allowtab" rows="6" maxlength="10000"></textarea>
+  </div>
+</div>
+                <label>In what language is the script written?</label>
+<div class="row">
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_c" name="ringLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_fortran" name="ringLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_idl" name="ringLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_java" name="ringLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_matlab" name="ringLanguage" value="matlab">
+          MATLAB
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_perl" name="ringLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_python" name="ringLanguage" value="python">
+          Python
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_r" name="ringLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_stata" name="ringLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_sql" name="ringLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_vba" name="ringLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="ringLanguage_other" name="ringLanguage" value="other">
+          Other
+      </label>
+    </div>
+  </div>
+  </div>
+  
+</div>
+              </div>
+            </div>
+	    
+            <div class="row">
+              <div class="col-xs-12 mt30">
+                <p><strong>Section 3:</strong> <b>This section is required.</b></p>
+                
+    <p>Propose a project to do while at The Data Incubator.  We want to know about your ability to think at a high level.  Try to think of projects that users or businesses will care about that are also relatively unanalyzed.  Here are some useful links about data sources <a href="http://blog.thedataincubator.com/tag/data-sources/">on our blog</a> as well as the archive of data sources on <a href="http://tinyletter.com/data-is-plural/archive">Data is Plural</a>.  You can see some final projects of previous Fellows on <a href="https://www.youtube.com/playlist?list=PLOE4k9MRzZanWmZ7MBrJFi7ZekYmVqEIV">our YouTube Page</a>.</p>
+    <p>Propose a project that uses a large, publicly accessible dataset.  Explain your motivation for tackling this problem, discuss the data source(s) you are using, and explain the analysis you are performing.  At a minimum, you will need to do enough exploratory data analysis to convince someone that the project is viable and generate two interesting non-trivial plots supporting this.  <em>The most impressive applicants have even finished a "rough draft" of their projects and have derived non-obvious meaningful conclusions from their data.</em>  Explain the plots and give url links to them.  For guidance on how to choose a project, check out <a href="http://blog.thedataincubator.com/2017/01/how-employers-judge-data-science-projects/">this blog post</a>.</p>
+  
+
+                <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="projectProposal">Propose a project.<sup>*</sup></label>
+    <textarea id="projectProposal" name="projectProposal" class="form-control" rows="5" maxlength="10000" required=""></textarea>
+  </div>
+</div>
+                <div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+  <div class="col-xs-12">
+    <label for="projectDataSourceLink" class="control-label left-align">Link to public description of data source.<sup>*</sup></label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="projectDataSourceLink" name="projectDataSourceLink" maxlength="200" required="" placeholder="http://blog.thedataincubator.com/tag/data-sources/">
+    <div class="error-text" id="projectDataSourceLink-error-text">
+    </div>
+  </div>
+</div>
+
+                <div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+  <div class="col-xs-12">
+    <label for="projectPlot1" class="control-label left-align">Link to 1st plot.  You are highly encouraged to use <a target="_blank" href="https://www.heroku.com/">Heroku apps domain</a> for an app or <a target="_blank" href="https://www.github.com/">Github</a> to display a notebook.<sup>*</sup></label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="projectPlot1" name="projectPlot1" maxlength="200" required="" placeholder="https://example.herokuapp.com/">
+    <div class="error-text" id="projectPlot1-error-text">
+    </div>
+  </div>
+</div>
+
+                <div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+  <div class="col-xs-12">
+    <label for="projectPlot2" class="control-label left-align">Link to 2nd plot.  You are highly encouraged to use <a target="_blank" href="https://www.heroku.com/">Heroku apps domain</a> for an app or <a target="_blank" href="https://www.github.com/">Github</a> to display a notebook.<sup>*</sup></label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="projectPlot2" name="projectPlot2" maxlength="200" placeholder="https://example.herokuapp.com/" required="">
+    <div class="error-text" id="projectPlot2-error-text">
+    </div>
+  </div>
+</div>
+
+                <div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="If you analyzed a subset of a larger dataset, report the size of the subset.">
+  <div class="col-xs-12">
+    <label for="projectDataSize" class="control-label left-align">How much data did you analyze (in MB)?<sup>*</sup></label>
+  </div>
+  <div class="col-xs-12">
+    <input type="text" class="form-control" id="projectDataSize" name="projectDataSize" maxlength="200" placeholder="1234" required="">
+    <div class="error-text" id="projectDataSize-error-text">
+    </div>
+  </div>
+</div>
+
+                <div>
+                  <p><b>
+                    How did you obtain your dataset?  (Please check all that apply.)
+                  </b></p>
+                </div>
+                <div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtainList" name="projectDataObtainList" value="download">
+        I downloaded a dataset available online.
+    </label>
+</div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtainList" name="projectDataObtainList" value="api">
+        I used a provided API.
+    </label>
+</div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtainList" name="projectDataObtainList" value="scrape">
+        I scraped data from a webpage.
+    </label>
+</div>
+                  <div class="row">
+  <div class="col-xs-5 col-lg-4">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" name="projectDataObtainList" value="other">
+        Other (please explain).
+      </label>
+    </div>
+  </div>
+  <div class="col-xs-7 col-lg-8">
+    <input type="text" class="form-control" id="projectDataObtainOtherExplanation" name="projectDataObtainOtherExplanation" maxlength="200/">
+  </div>
+</div>
+                </div>
+
+              </div>
+              <div class="col-xs-12 mt15">
+                <p>We want to know your communication style.  Record a video of yourself giving a high-level proposal of your project to a non-technical person.  The video should be no longer than 1 minute and should be at a higher level than the previous explanation.</p>
+                <p>Record a video of yourself and <a href="https://support.google.com/youtube/answer/57407">upload it to YouTube</a> (and not another video hosting service).  Be sure to make the video unlisted (but not private!) so people without the link cannot find it on Google (go <a href="https://www.youtube.com/my_videos">here</a>, click "Edit" on your video, <a href="https://www.thedataincubator.com/static/images/youtube-unlisted.png">select unlisted from the privacy dropdown menu</a>, and save your changes).  You can use either your webcam or a smartphone.</p>
+                <p>Once complete, please provide the <em>embed</em> URL of the video. To find this URL (<b>NOT</b> the entire iframe tag), on the video's normal watch page, you can click <a href="https://www.thedataincubator.com/static/images/embed.png">Share → Embed</a>, and take the link from inside the 'src' attribute of the tag. It looks something like this: https://www.youtube.com/embed/y9tX5whl2U</p>
+                <p><strong>For more detailed instructions, including screenshots, click <a href="https://www.thedataincubator.com/video-upload.html" target="_blank">here</a>.</strong></p>
+                <div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please provide a youtube link">
+  <div class="col-xs-12">
+    <label for="video">Please provide the EMBED URL to your video<sup>*</sup></label>
+    <input type="url" class="form-control" id="video" name="video" placeholder="https://www.youtube.com/embed/y9tX5whl2U" required="" pattern="(https?:\/\/(?:(?:www\.)?youtube.com/embed|youtu.be(?!\/embed))/.*)">
+  </div>
+  <div class="error-text" id="video-error-text">
+  </div>
+</div>
+                <div class="alert alert-info" role="alert">
+                  <p><b>Note:</b> youtube videos take some time to process after uploading, and your video won't validate until processing is complete. Please allow 10 to 15 minutes for this to take place.</p>
+                </div>
+              </div>
+              <div class="col-xs-12 mt15">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="projectCode">Please provide the script used to generate this result (max 10000 characters).<sup>*</sup></label>
+    <textarea id="projectCode" name="projectCode" class="form-control allowtab" rows="6" maxlength="10000" required=""></textarea>
+  </div>
+</div>
+                <label>In what language is the script written?</label>
+<div class="row">
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_c" name="projectLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_fortran" name="projectLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_idl" name="projectLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_java" name="projectLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_matlab" name="projectLanguage" value="matlab">
+          MATLAB
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_perl" name="projectLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_python" name="projectLanguage" value="python">
+          Python
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_r" name="projectLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_stata" name="projectLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_sql" name="projectLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_vba" name="projectLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+  </div>
+  
+  <div class="col-xs-3">
+    <div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_other" name="projectLanguage" value="other">
+          Other
+      </label>
+    </div>
+  </div>
+  </div>
+  
+</div>
+              </div>
+
+              <!-- Misc -->
+              <div class="col-xs-12 mt30">
+                <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="time">For future challenge questions, how many hours did it take you to complete this challenge?  This will not be considered in your application (please just enter a number).<sup>*</sup></label>
+    <input type="number" class="form-control" id="time" name="time" placeholder="9999" required="">
+  </div>
+  <div class="error-text" id="time-error-text">
+  </div>
+</div>
+              </div>
+
+              <div class="col-xs-12 mt15">
+                <div class="checkbox">
+    <label>
+        <input type="checkbox" id="own" name="own" value="own" required="">
+        By submitting this form, you certify that your answers are the result of your own work and not copied from another individual or source. <sup>*</sup> 
+    </label>
+</div>
+                <input id="email" name="email" type="hidden">
+                <input id="code" name="code" type="hidden">
+                <input id="session" name="session" type="hidden" value="201506">
+                <div class="form-group text-center mt15">
+                  <button id="submit-button" type="submit" class="btn btn-default">Submit</button>
+                  <button data-toggle="tooltip" id="save-button" type="submit" class="btn btn-default" data-original-title="" title="">Save</button>
+                  <p>You can save your work and return to this page at any point. Once you have filled out the required fields, your challenge submission will be considered 'complete'.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="formSubmitSuccess" class="formSubmitStatus row mt30" style="display: none;">
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Success!</strong>  Thank you for submitting your challenge questions.  A confirmation email has been sent to your email with instructions on how to make sure you receive further communications from us.
+              </div>
+            </div>
+
+            <div id="formSaved" class="formSubmitStatus row mt30" style="display: none;">
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Saved!</strong> We have saved a copy of your submission. You can come back before the challenge is due to modify answers. If you have submitted a fully valid challenge at this point, your status has been updated to reflect this.
+              </div>
+            </div>
+
+
+            <div id="formSubmitError" class="formSubmitStatus row mt30" style="display: none;">
+              <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Something went wrong!</strong> See above for specific validation errors.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="paralaxSlice4" data-stellar-background-ratio="0.5" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(&quot;/static/dist/images/theme-pics/big-city-3a.jpg&quot;);">
+  <div class="maskParent">
+    <div class="paralaxMask"></div>
+    <div class="paralaxText">
+      <blockquote class="bigTitle">With loads of data you will find relationships that aren’t real.<br>Big data isn’t about bits,<br>it’s about talent.</blockquote>
+      <small>Forbes Magazine</small>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <!-- global wrapper -->
+    <!-- End Document
+    ================================================== -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+  
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    },
+  });
+</script>
+<script src="./Challenge _ The Data Incubator_files/MathJax.js" id=""></script>
+    <script type="text/javascript" src="./Challenge _ The Data Incubator_files/bootstrap-datepicker.js" defer=""></script>
+<script type="text/javascript" src="./Challenge _ The Data Incubator_files/application.js" defer=""></script>
+<style>
+  input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  /* .invalid class prevents CSS from automatically applying */
+  .invalid input:invalid {
+      background: #BE4C54;
+  }
+
+  /* Mark valid inputs during .invalid state */
+  .invalid input:valid {
+      background: #17D654 ;
+  }
+</style>
+
+
+  
+
+  
+  <!-- Google Analytics -->
+  <!-- End Google Analytics -->
+
+  <!-- CSS -->
+  
+    <link type="text/css" id="colors" rel="stylesheet" href="./Challenge _ The Data Incubator_files/03da84ed2c1880bd3a699cfeca2a93c2.styles.min.css">
+  
+
+  <!-- web font  -->
+  <link href="./Challenge _ The Data Incubator_files/css" rel="stylesheet" type="text/css">
+  
+
+
+<!-- plugin css  --><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div></body></html>
